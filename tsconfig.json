@@ -1,0 +1,49 @@
+{
+  "include": ["./src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext"],
+
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true,
+    "plugins": [
+      { "transform": "typescript-transform-paths", "useRootDirs": true},
+      { "transform": "typescript-transform-paths", "afterDeclarations": true, "useRootDirs": true }
+    ],
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  }
+}
