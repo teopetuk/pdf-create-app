@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`env utils parseEnv creates object from .env 1`] = `
+{
+  "OBJ1": {
+    "VAL1": "1",
+  },
+  "OBJ2": {
+    "VAL2": "2_2",
+  },
+}
+`;
